@@ -1,0 +1,108 @@
+.page-header
+	%h1
+		= @animal.nombre
+		%small= @animal.id
+	.row
+		.col-md-3
+			%img.img-thumbnail{src: "/imgs/animals/#{@animal.image}"}/
+		.col-md-4.animal_summary
+			%p
+				%strong Sexo:
+				%span.label.label-default= @animal.sexo
+			%p
+				%strong Raza:
+				%span.label.label-primary= @animal.raza
+			%p
+				%strong Especie:
+				%span.label.label-warning= @animal.especie
+			%p
+				%strong Estatus:
+				%span.label.label-danger= @animal.status
+			%p
+				%strong Nacimiento:
+				%span= @animal.nacimiento
+			%p
+				%strong Color:
+				%span= @animal.color
+			%p
+				%strong Peso:
+				%span #{@animal.peso} <small>kg</small>
+			%p
+				%strong Veterinario:
+				%span <mark>#{@animal.veterinario}</mark>
+
+		.col-md-5
+			%h4 Observaciones
+			%blockquote - El animal parece haber sufrido de un maltrato severo.
+
+	.row#animal_ops
+		.col-md-6
+			.panel.panel-default
+				.panel-heading
+					%h3.panel-title Vacunas
+				%table.table.table-striped.table-bordered.table-condensed
+					%thead
+						%th Nombre
+						%th Fecha de aplicación
+						%th Fecha de la siguiente
+						%th Veterinario
+					%tbody
+						%tr
+							%td Bordetellosis
+							%td 05-01-2014
+							%td 06-03-2014
+							%td Rubí Pillado
+						%tr
+							%td Rabia
+							%td 17-02-2014
+							%td 18-04-2014
+							%td Rubí Pillado
+						%tr
+							%td Leptospirosis
+							%td 23-10-2014
+							%td 22-12-2014
+							%td Federico Mejía
+		.col-md-6
+			.panel.panel-default
+				.panel-heading
+					%h3.panel-title
+						Tratamientos
+						%a.btn.btn-success.btn-xs.pull-right(href="tratamientos.html")
+							%i.glyphicon.glyphicon-plus-sign
+							Nuevo
+				%table.table.table-striped
+					%thead
+						%th Nombre
+						%th Fecha de aplicación
+						%th Veterinario
+					%tbody
+						%tr
+							%td Sarna demodésica
+							%td 12-03-2014
+							%td Rubí Pillado
+						%tr
+							%td Parvovirus
+							%td 03-09-2014
+							%td Federico Mejía
+		.col-md-12
+			.panel.panel-default
+				.panel-heading
+					%h3.panel-title Medicamentos
+				%table.table.table-striped.table-condensed
+					%thead
+						%th Nombre
+						%th Fecha de aplicación
+						%th Veterinario
+					%tbody
+						%tr
+							%td Sulfametoxazol
+							%td 01-09-2014
+							%td Rubí Pillado
+						%tr
+							%td Dexamentasona
+							%td 11-10-2014
+							%td Federico Mejía
+						%tr
+							%td Tobramicina
+							%td 18-10-2014
+							%td Federico Mejía

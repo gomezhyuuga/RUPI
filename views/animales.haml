@@ -1,0 +1,20 @@
+.page-header
+	%h1 Lista de Animales
+.row#animal_list
+	- @animales.each do |a|
+		.col-sm-3.col-md-3
+			.thumbnail
+				%img{src:"imgs/animals/#{a.image}", width: 300, height: 300}/
+				.caption
+					%h3= a.nombre
+					%p.summary
+						%strong Sexo:
+						%span.label.label-default Femenino <br/>
+						%strong Raza:
+						%span.label.label-primary Boston terrier <br/>
+						%strong Estatus:
+						%span.label.label-success Adoptado <br/>
+					%p
+						%a.btn.btn-primary.btn-block{ href: "animales/#{a.id}" }
+							%i.glyphicon.glyphicon-info-sign
+							Ver detalles
