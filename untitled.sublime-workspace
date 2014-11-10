@@ -1,0 +1,838 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"files",
+				"files_size"
+			],
+			[
+				"file",
+				"files_size"
+			],
+			[
+				"full",
+				"full_dirname"
+			],
+			[
+				"print",
+				"printf	printf …"
+			],
+			[
+				"id_veter",
+				"id_veterinario"
+			],
+			[
+				"clave",
+				"CLAVE_PRODUCTO"
+			],
+			[
+				"cla",
+				"CLAVE"
+			],
+			[
+				"recte",
+				"RECETAmcj"
+			],
+			[
+				"pro",
+				"PRODUCTOmcj"
+			],
+			[
+				"CLAVE",
+				"CLAVE_INGREDIENTE"
+			],
+			[
+				"ingr",
+				"INGREDIENTEmcj"
+			],
+			[
+				"G",
+				"GALLETA"
+			],
+			[
+				"no",
+				"NOMBRE"
+			],
+			[
+				"r",
+				"r"
+			],
+			[
+				"rece",
+				"RECETAmcj"
+			],
+			[
+				"inge",
+				"INGREDIENTEmcj"
+			],
+			[
+				"cl",
+				"CLAVE_PRODUCTO"
+			],
+			[
+				"Prod",
+				"PRODUCTOmcj"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 49.0,
+		"selected_items":
+		[
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"syntax rails",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"pack insta",
+				"Package Control: Install Package"
+			],
+			[
+				"file new",
+				"File: New View into File"
+			],
+			[
+				"settings",
+				"Preferences: Settings - Default"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"pack inst",
+				"Package Control: Install Package"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"file ren",
+				"File: Rename"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"syntax c",
+				"Set Syntax: C"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"path",
+				"File: Copy Path"
+			],
+			[
+				"file path",
+				"File: Copy Path"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"key user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			]
+		],
+		"width": 417.0
+	},
+	"console":
+	{
+		"height": 332.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gomezhyuuga/Development/sinatra/rupi",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public"
+	],
+	"file_history":
+	[
+		"/Users/gomezhyuuga/Development/sinatra/rupi/rupi.sublime-project",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/css/rupi.css",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/models/models.rb",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/layout.haml",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/layout.erb",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/animal.haml",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/js/rupi.js",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/tratamiento.erb",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/fonts/glyphicons-halflings-regular.woff",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/vendor/datepicker/tests/suites/calendar-weeks.js",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/vendor/select2/component.json",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/vendor/bootstrap/js/npm.js",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/animales.haml",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/website.rb",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/test.rb",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/temp.haml",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/scripts/Registro.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/scripts/tablas.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/scripts/datos.sql",
+		"/Users/gomezhyuuga/Development/html/rupi/animal.html",
+		"/Users/gomezhyuuga/Development/html/rupi/tratamiento.html",
+		"/Users/gomezhyuuga/Development/html/rupi/tratamientos.html",
+		"/Users/gomezhyuuga/Development/html/rupi/animales.html",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/asdadsa.haml",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/vendor/select2/select2_locale_ar.js",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/index.haml",
+		"/Users/gomezhyuuga/Development/html/rupi/index.html",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/public/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg",
+		"/Users/gomezhyuuga/Development/sinatra/rupi/views/index.html.haml",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/models/.keep",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config/initializers/mime_types.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/models/registro.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/README.rdoc",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config/routes.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/test/fixtures/.keep",
+		"/Users/gomezhyuuga/Development/rails/bdatos/test/fixtures/registros.yml",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config/initializers/filter_parameter_logging.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config.ru",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config/database.yml",
+		"/Users/gomezhyuuga/Development/rails/bdatos/db/seeds.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/assets/stylesheets/application.css",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/views/animals/index.html.erb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/views/layouts/application.html.erb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/assets/javascripts/application.js",
+		"/Users/gomezhyuuga/Development/rails/bdatos/vendor/assets/datepicker/locales/bootstrap-datepicker.nl-BE.js",
+		"/Users/gomezhyuuga/Development/rails/bdatos/vendor/assets/select2/select2_locale_es.js",
+		"/Users/gomezhyuuga/Development/rails/bdatos/tmp/cache/assets/development/sprockets/ee4074d73ed06b6e5ec59e9c1546e6b1",
+		"/Users/gomezhyuuga/Development/rails/bdatos/bin/spring",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/controllers/animals_controller.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config/application.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/helpers/animals_helper.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/views/welcome/index.html.erb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/controllers/welcome_controller.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/assets/stylesheets/welcome.css.scss",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/helpers/welcome_helper.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/helpers/application_helper.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config/initializers/assets.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/vendor/assets/select2/select2.jquery.json",
+		"/Users/gomezhyuuga/Development/rails/bdatos/tmp/cache/assets/development/sass/7ccf727d9543742d5581a0bcb2a3ba6b15533c2e/application.css.scssc",
+		"/Users/gomezhyuuga/Development/rails/bdatos/vendor/assets/stylesheets/cover.css",
+		"/Users/gomezhyuuga/Development/rails/bdatos/config/initializers/inflections.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/Gemfile",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/assets/javascripts/welcome.js.coffee",
+		"/Users/gomezhyuuga/Development/rails/bdatos/app/controllers/application_controller.rb",
+		"/Users/gomezhyuuga/Development/rails/bdatos/vendor/assets/select2/LICENSE",
+		"/Users/gomezhyuuga/Development/vagrant/c_dev/dir_threads.c",
+		"/Users/gomezhyuuga/Development/vagrant/c_dev/threadadd.c",
+		"/Users/gomezhyuuga/Development/vagrant/c_dev/lab10.c",
+		"/Users/gomezhyuuga/Development/vagrant/c_dev/dirt",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Scripts/notas.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Examen Parcial 2/Examen.txt",
+		"/Users/gomezhyuuga/Development/html/rupi/css/sandstone.css",
+		"/Users/gomezhyuuga/Development/html/rupi/css/rupi.css",
+		"/Users/gomezhyuuga/Development/html/rupi/datepicker/tests/suites/calendar-weeks.js",
+		"/Users/gomezhyuuga/Development/html/rupi/css/cerulean.css",
+		"/Users/gomezhyuuga/Development/rails/blog/test/controllers/articles_controller_test.rb",
+		"/Users/gomezhyuuga/Development/rails/blog/app/controllers/articles_controller.rb",
+		"/Users/gomezhyuuga/Development/rails/blog/config/application.rb",
+		"/Users/gomezhyuuga/Development/rails/blog/config/initializers/inflections.rb",
+		"/Users/gomezhyuuga/Development/vagrant/c_dev/lab9.c",
+		"/Users/gomezhyuuga/Library/Caches/Cleanup At Startup/Transmit/1F7D6B10-DA63-4980-A067-31661FDFEFB8/head.php",
+		"/Users/gomezhyuuga/Development/html/rupi/datepicker/tests/suites/keyboard_navigation/all.js",
+		"/Users/gomezhyuuga/Development/html/rupi/css/flatly.css",
+		"/Users/gomezhyuuga/Development/html/rupi/css/superhero.css",
+		"/Users/gomezhyuuga/Development/html/rupi/css/slate.css",
+		"/Users/gomezhyuuga/Development/html/rupi/js/rupi.js",
+		"/Users/gomezhyuuga/Development/html/rupi/bootstrap/js/npm.js",
+		"/Users/gomezhyuuga/Development/html/rupi/css/cover.css",
+		"/Users/gomezhyuuga/Development/html/rupi/js/jquery.min.js",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/datos.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/tablas.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/registro.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/ProyectoDESCEM_AS2014.doc",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/creacion_db.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/asdasd.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Proyecto/insertar_datos.sql",
+		"/Users/gomezhyuuga/Downloads/Examen.txt",
+		"/Users/gomezhyuuga/Dropbox/Box/クラクス/serials.txt",
+		"/Volumes/iStat Menus 5.0.2 by Macappdowmload.Net/SN.rtf",
+		"/Users/gomezhyuuga/Downloads/practicaGlobalKnowledge-2.sql",
+		"/Users/gomezhyuuga/Downloads/practica.sql",
+		"/Users/gomezhyuuga/Downloads/practicaGlobalKnowledge.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/practicaGlobalKnowledge.sql",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/untitled.sql",
+		"/Library/Preferences/Audio/com.apple.audio.DeviceSettings.plist",
+		"/Library/Preferences/Audio/com.apple.audio.SystemSettings.plist",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/untitled.xml",
+		"/Users/gomezhyuuga/Development/vagrant/c_dev/matriz.c",
+		"/Users/gomezhyuuga/Library/Application Support/Sublime Text 3/Packages/Diffy/Diffy.sublime-settings",
+		"/System/Library/LaunchAgents/com.apple.midiserver.plist",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/application.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/helpers/application_helper.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/log/production.log",
+		"/Users/gomezhyuuga/Development/rails/ofimed/public/javascripts/ajax_loader.js",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/views/citas/agenda.html.erb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/app/models/cita.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/initializers/couchdb_initializer.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/Capfile",
+		"/Users/gomezhyuuga/Development/rails/ofimed/Rakefile",
+		"/Users/gomezhyuuga/Dropbox/TEC CEM/Semestre 5/Base de datos/Scripts/Practica4B.sql",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/deploy/staging.rb",
+		"/Users/gomezhyuuga/Downloads/Practica4.sql",
+		"/Users/gomezhyuuga/Desktop/log_crear_cita_agenda.log",
+		"/Users/gomezhyuuga/Development/rails/ofimed/config/deploy/production.rb",
+		"/Users/gomezhyuuga/Development/rails/ofimed/deploy-webdir/karuna.jnlp",
+		"/Users/gomezhyuuga/Development/rails/ofimed/log/development.log"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tratamiento",
+			"flash",
+			"btn ",
+			"btn",
+			"btn-link",
+			"select2",
+			"def raza",
+			"Raza",
+			"id_raza",
+			"name",
+			"M",
+			"html",
+			"%strong",
+			" <br>",
+			"</span>",
+			"<span class=",
+			"<strong>",
+			"strong",
+			"nombre",
+			" ",
+			"<tr>",
+			"<td>",
+			"<th>",
+			" ",
+			"Rupi",
+			"`Registro`",
+			"tab",
+			"tab_s",
+			"end",
+			"=>",
+			"space",
+			"animal_list",
+			"width",
+			"*",
+			"../",
+			"RESUME print",
+			"execjs",
+			"index2",
+			"in",
+			"index",
+			"sem_init",
+			"Federico Mejía",
+			"<td>",
+			"ption",
+			"tratami",
+			"id",
+			"sm-10",
+			"sm-4",
+			"select2",
+			"animal",
+			"255",
+			"col-md-5",
+			"<a href=\"#\" class=\"btn btn-primary btn-block\" role=\"button\">\n								<i class=\"glyphicon glyphicon-info-sign\"></i>",
+			"4",
+			"link",
+			"a",
+			"font",
+			"foot",
+			"mast",
+			"background",
+			"rubi",
+			"tratamiento",
+			"fecha_naci",
+			"t.st_",
+			"dirent",
+			"dirt",
+			"alloc",
+			"\\n",
+			"argv",
+			"dirname",
+			"argv[1]",
+			"dirt->d_name",
+			"dip",
+			"Boleta",
+			"Requisito",
+			"flio",
+			"tratamiento",
+			"Tratamiento",
+			"tratamiento",
+			"Tratamiento",
+			"tratamiento",
+			"status",
+			"Raza",
+			"raza",
+			"Especie",
+			"especie",
+			"status",
+			"adoptante",
+			"especie",
+			"tratamiento",
+			"vacuna",
+			"data",
+			"j",
+			"i",
+			"data",
+			"v",
+			"k",
+			"1936745574",
+			"1751412846",
+			"1769173099",
+			"1936745574",
+			"1751412846",
+			"1936745574",
+			"AppleHDAEngineOutput",
+			"built-in",
+			"karuna.com.mx",
+			"function refreshclose",
+			"refreshclose",
+			"pacientenuevo",
+			"cita",
+			"agregar",
+			"      ",
+			"syntax on",
+			"encod",
+			"number",
+			"set number"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rupi",
+				"rupi.sublime-project"
+			],
+			[
+				"layou",
+				"views/layout.erb"
+			],
+			[
+				"layout",
+				"views/layout.erb"
+			],
+			[
+				"rupi.cs",
+				"public/css/rupi.css"
+			],
+			[
+				"animal",
+				"views/animal.haml"
+			],
+			[
+				"model",
+				"models/models.rb"
+			],
+			[
+				"web",
+				"website.rb"
+			],
+			[
+				"animales",
+				"views/animales.haml"
+			],
+			[
+				"layouer",
+				"views/layout.erb"
+			],
+			[
+				"lay",
+				"views/layout.haml"
+			],
+			[
+				"layoutha",
+				"views/layout.haml"
+			],
+			[
+				"rupi.js",
+				"public/js/rupi.js"
+			],
+			[
+				"test",
+				"test.rb"
+			],
+			[
+				"layo",
+				"views/layout.haml"
+			],
+			[
+				"temp",
+				"views/temp.haml"
+			],
+			[
+				"as",
+				"views/asdadsa.haml"
+			],
+			[
+				"index.",
+				"views/index.html.haml"
+			],
+			[
+				"modelregi",
+				"app/models/registro.rb"
+			],
+			[
+				"fixture",
+				"test/fixtures/registros.yml"
+			],
+			[
+				"createreg",
+				"db/migrate/20141107225911_create_registros.rb"
+			],
+			[
+				"databas",
+				"config/database.yml"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"animalindex",
+				"app/views/animals/index.html.erb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"layoutapp",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"welcomeindex",
+				"app/views/welcome/index.html.erb"
+			],
+			[
+				"applica.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"asset",
+				"config/initializers/assets.rb"
+			],
+			[
+				"app.js",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"apprb",
+				"config/application.rb"
+			],
+			[
+				"config.r",
+				"config.ru"
+			],
+			[
+				"initiali",
+				"config/initializers/assets.rb"
+			],
+			[
+				"cover.css",
+				"vendor/assets/stylesheets/cover.css"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"welcome.cs",
+				"app/assets/stylesheets/welcome.css.scss"
+			],
+			[
+				"configinitia",
+				"config/initializers/assets.rb"
+			],
+			[
+				"appcss",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"dirth",
+				"dir_threads.c"
+			],
+			[
+				"the",
+				"threadadd.c"
+			],
+			[
+				"ru",
+				"css/rupi.css"
+			],
+			[
+				"cover",
+				"css/cover.css"
+			],
+			[
+				"layouts",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"welcome",
+				"app/controllers/welcome_controller.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"articles",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"index",
+				"app/views/welcome/index.html.erb"
+			],
+			[
+				"anima",
+				"animal.html"
+			],
+			[
+				"anima.",
+				"animal.html"
+			],
+			[
+				"tra",
+				"tratamiento.html"
+			],
+			[
+				"naim",
+				"animal.html"
+			],
+			[
+				"trata",
+				"tratamientos.html"
+			],
+			[
+				"anima.h",
+				"animal.html"
+			],
+			[
+				"animal.",
+				"animal.html"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"na",
+				"animal.html"
+			],
+			[
+				"aniamle",
+				"animales.html"
+			],
+			[
+				"registr",
+				"registro.sql"
+			],
+			[
+				"tabl",
+				"tablas.sql"
+			],
+			[
+				"dat",
+				"datos.sql"
+			],
+			[
+				"app.",
+				"config/application.rb"
+			],
+			[
+				"appr.",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"agrega",
+				"app/views/citas/agregacita.js.erb"
+			],
+			[
+				"citascontro",
+				"app/controllers/citas_controller.rb"
+			],
+			[
+				"deplo",
+				"config/deploy/staging.rb"
+			],
+			[
+				"app.r",
+				"config/application.rb"
+			],
+			[
+				"app.rb",
+				"config/application.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 140.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
