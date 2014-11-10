@@ -26,7 +26,7 @@ DataMapper.setup(:default, 'mysql://root:@localhost/RUPI?charset=UTF-8')
 DataMapper.finalize
 
 get '/' do
-	haml :index
+	haml :index, layout: false
 end
 
 get '/animales?/?' do

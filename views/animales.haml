@@ -4,7 +4,7 @@
 	- @animales.each do |a|
 		.col-sm-3.col-md-3
 			.thumbnail
-				%img{src:"imgs/animals/#{a.image}", width: 300, height: 300}/
+				%img{src:"/imgs/animals/#{a.image}", width: 300, height: 300}/
 				.caption
 					%h3= a.nombre
 					%p.summary
@@ -18,3 +18,4 @@
 						%a.btn.btn-primary.btn-block{ href: "animales/#{a.id}/" }
 							%i.glyphicon.glyphicon-info-sign
 							Ver detalles
+%input#navbar_active{type: :hidden, value: :animales}
