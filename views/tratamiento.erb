@@ -1,0 +1,73 @@
+<div class="page-header">
+	<h1>Registrar tratamiento</h1>
+</div>
+
+<div class="row">
+	<div class="col-md-5">
+		<img src="/imgs/clipart01.jpg" class="center-block" height="300px" />
+	</div>
+	<div class="col-md-7">
+		<form class="form-horizontal" action="/animales/<%= @animal.id %>/tratamiento" method="post">
+
+			<div class="form-group">
+				<label for="animal" class="control-label col-sm-2">Animal:</label>
+				<div class="col-sm-10">
+					<select name="animal_id" id="animal_id" class="use-select2 col-sm-12">
+						<% @animales.each do |e| %>
+							<option value="<%= e.id %>"><%= e.nombre %></option>
+						<% end %>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="tratamiento" class="control-label col-sm-2">Tratamiento:</label>
+				<div class="col-sm-10">
+					<select name="tratamiento" id="tratamiento" class="use-select2 col-sm-12">
+						<option>Moquillo</option>
+						<option>Marvovirus</option>
+						<option>Sarna demodásica</option>
+						<option>Cataratas</option>
+						<option>Dermatitis</option>
+						<option>Alergia</option>
+						<option>FIV</option>
+						<option>Otitis canina</option>
+						<option>Sarna sarcáptica</option>
+						<option>Coronavirus</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="veterinario" class="control-label col-sm-2">Veterinario:</label>
+				<div class="col-sm-10">
+					<div class="radio">
+						<label>
+							<input type="radio" name="veterinario" checked> Rubí Pillado
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="veterinario"> Federico Mejía
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="fecha" class="control-label col-sm-2">Fecha de aplicación:</label>
+				<div class="col-sm-5">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+						<input type="text" class="form-control datepicker" placeholder="Fecha">
+					</div>
+				</div>
+			</div>
+
+			<button class="btn btn-success btn-lg" type="submit">
+				<i class="glyphicon glyphicon-ok"></i>
+				Guardar
+			</button>
+		</form>
+	</div>
+</div>

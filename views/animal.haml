@@ -33,7 +33,7 @@
 
 		.col-md-5
 			%h4 Observaciones
-			%blockquote - El animal parece haber sufrido de un maltrato severo.
+			%blockquote - #{@animal.observaciones}
 
 	.row#animal_ops
 		.col-md-6
@@ -67,7 +67,7 @@
 				.panel-heading
 					%h3.panel-title
 						Tratamientos
-						%a.btn.btn-success.btn-xs.pull-right(href="tratamientos.html")
+						%a.btn.btn-success.btn-xs.pull-right(href="tratamiento/")
 							%i.glyphicon.glyphicon-plus-sign
 							Nuevo
 				%table.table.table-striped

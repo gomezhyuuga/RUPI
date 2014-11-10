@@ -53,3 +53,10 @@ table th {
 	text-align: center;
 	background-color: #f2f2f2
 }
+
+td.form-actions {
+	text-align: center;
+}
+td.form-actions form {
+	display: inline;
+}

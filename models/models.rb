@@ -1,4 +1,4 @@
-
+# encoding: utf-8
 class	Registro
 	include DataMapper::Resource
 	# set all String properties to have a default length of 255
@@ -40,6 +40,22 @@ class	Registro
 			"Femenino"
 		end
 	end
+end
+
+class Tratamiento
+	include DataMapper::Resource
+	# set all String properties to have a default length of 255
+	DataMapper::Property::String.length(255)
+
+	# set the storage name for the :legacy repository
+   storage_names[:default] = "Tratamiento"
+
+   property :id,			Serial, field: "id_tratamiento"
+   property :nombre,		String, field: "nombreT"
+
+   def to_s
+   	@nombre
+   end
 end
 
 class Veterinario

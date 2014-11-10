@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Adopciones RUPI</title>
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/cerulean.css" rel="stylesheet" />
+    <link href="/vendor/select2/select2.css" rel="stylesheet" />
+    <link href="/vendor/select2/select2-bootstrap.css" rel="stylesheet" />
+    <link href="/vendor/datepicker/css/datepicker3.css" rel="stylesheet" />
+    <link href="/css/rupi.css" rel="stylesheet" />
+    <plain>
+
+			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+			<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+			<!--[if lt IE 9]>
+			  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<![endif]-->
+
+    </plain>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="/">RUPI</a>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/animales">Animales</a></li>
+          <li><a href="/tratamientos">Tratamientos</a></li>
+          <li><a href="/tratamientos">Medicinas</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input class="form-control" placeholder="Buscar"></input>
+          </div>
+          <button class="btn btn-default" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="bg">
+        <!-- alerts -->
+        <% flash.keys.each do |f| %>
+        <div class="alert alert-<%= f %> alert-dismisssible">
+            <button type="button" class="close" data-dismiss="alert">
+              <span>&times;</span>
+            </button>
+            <strong><%= flash[f] %></strong>
+            <% if flash[:details] %>
+              <p><%= flash[:details] %></p>
+            <% end %>
+        </div>
+        <% end %>
+
+        <%= yield %>
+      </div>
+    </section>
+    <% if @debug %>
+      <section class="container">
+        <%= @debug %>
+      </section>
+    <% end %>
+    <footer>
+      <p>Proyecto Base de Datos <a href="#">ITESM CEM</a></p>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/select2/select2.js"></script>
+    <script src="/vendor/datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- Application -->
+    <script src="/js/rupi.js"></script>
+  </body>
+</html>
