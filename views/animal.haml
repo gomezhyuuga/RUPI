@@ -70,20 +70,21 @@
 						%a.btn.btn-success.btn-xs.pull-right(href="tratamiento/")
 							%i.glyphicon.glyphicon-plus-sign
 							Nuevo
-				%table.table.table-striped
-					%thead
-						%th Nombre
-						%th Fecha de aplicación
-						%th Veterinario
-					%tbody
-						%tr
-							%td Sarna demodésica
-							%td 12-03-2014
-							%td Rubí Pillado
-						%tr
-							%td Parvovirus
-							%td 03-09-2014
-							%td Federico Mejía
+				- unless @animal.tratamientos.blank?
+					%table.table.table-striped
+						%thead
+							%th Nombre
+							%th Fecha de aplicación
+							%th Veterinario
+						%tbody
+							- @animal.tratamientos.each do |t|
+								%tr
+									%td= t.tratamiento
+									%td= t.fecha_aplicacion
+									%td= t.veterinario
+				- else
+					.panel-body.text-center
+						%p.lead Sin tratamientos
 		.col-md-12
 			.panel.panel-default
 				.panel-heading

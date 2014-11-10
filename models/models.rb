@@ -10,14 +10,11 @@ class	Registro
    # properties from teacher's ER-diagram
 	property :id,				Serial, field: "folio"
 	property :nombre,			String
-	# property :especie,		Integer, field: "id_especie"
-	# property :raza,			Integer, field: "id_raza"
 	property :sexo,			String
 	property :color,			String
 	property :peso,			Float
 	property :nacimiento,	Date, field: "fecha_nacimiento"
 	property :veterinario,	Integer, field: "id_vetRecibe"
-	# property :status,			Integer, field: "id_status"
 	property :observaciones, Text
 	property :adoptante, 	Integer, field: "id_adoptante"
 	# Custom properties
@@ -36,6 +33,10 @@ class	Registro
 
 	def veterinario
 		Veterinario.get(@veterinario)
+	end
+
+	def to_s
+		@nombre
 	end
 	def sexo
 		case @sexo
@@ -72,12 +73,16 @@ class DetalleTratamiento
    storage_names[:default] = "DetalleTratamiento"
 
    property :fecha_aplicacion,	Date
-   property :id_veterinario,		Integer
+   property :veterinario,			Integer, field: "id_veterinario"
 
    # belongs_to child_key: FK de esta tabla
    # belongs_to parent_key: PK de la tabla referenciada
    belongs_to :tratamiento, 'Tratamiento', key: true, child_key: :id_tratamiento
    belongs_to :registro, 'Registro', key: true, child_key: :folio
+
+   def veterinario
+		Veterinario.get(@veterinario)
+	end
 end
 
 class Veterinario

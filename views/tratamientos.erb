@@ -6,7 +6,7 @@
 	<div class="col-md-3">
 		<h2>
 			Catálogo
-			<button class="btn btn-success pull-right">
+			<button class="btn btn-success btn-sm pull-right">
 				<i class="glyphicon glyphicon-plus-sign"></i>
 				Nuevo
 			</button>
@@ -14,9 +14,7 @@
 		<table class="table table-condensed table-bordered">
 			<thead>
 				<tr>
-					<th>
-						Nombre
-					</th>
+					<th>Nombre</th>
 					<th>Acciones</th>
 				</tr>
 			</thead>
@@ -51,42 +49,14 @@
 				<th>Veterinario</th>
 			</thead>
 			<tbody>
+				<% @detalles.each do |dt| %>
 				<tr>
-					<td><a href="animal.html">Tyson</a></td>
-					<td>Sarna demodésica</td>
-					<td>12-03-2014</td>
-					<td>Rubí Pillado</td>
+					<td><a href="/animales/<%= dt.registro.id %>/"><%= dt.registro %></a></td>
+					<td><%= dt.tratamiento %></td>
+					<td><%= dt.fecha_aplicacion %></td>
+					<td><%= dt.veterinario %></td>
 				</tr>
-				<tr>
-					<td><a href="animal.html">Totti</a></td>
-					<td>Parvovirus</td>
-					<td>11-10-2014</td>
-					<td>Federico Mejía</td>
-				</tr>
-				<tr>
-					<td><a href="animal.html">Laika</a></td>
-					<td>Cataratas</td>
-					<td>03-09-2014</td>
-					<td>Rubí Pillado</td>
-				</tr>
-				<tr>
-					<td><a href="animal.html">Neko</a></td>
-					<td>Dermatitis</td>
-					<td>23-02-2014</td>
-					<td>Federico Mejía</td>
-				</tr>
-				<tr>
-					<td><a href="animal.html">Kuro</a></td>
-					<td>Sarna sarcáptica</td>
-					<td>30-12-2014</td>
-					<td>Rubí Pillado</td>
-				</tr>
-				<tr>
-					<td><a href="animal.html">Rambo</a></td>
-					<td>Parvovirus</td>
-					<td>03-09-2014</td>
-					<td>Federico Mejía</td>
-				</tr>
+				<% end %>
 			</tbody>
 		</table>
 	</div>

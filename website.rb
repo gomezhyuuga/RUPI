@@ -3,6 +3,7 @@ require 'rubygems'
 require 'sinatra'
 require 'data_mapper' # ORM
 require 'Haml' # Templates
+require 'awesome_print'
 require 'rack-flash'
 require 'sinatra/redirect_with_flash'
 require "#{Dir.pwd}/models/models.rb"
@@ -15,6 +16,10 @@ require "#{Dir.pwd}/models/models.rb"
 
 enable :sessions
 use Rack::Flash
+use Rack::Session::Cookie, :key => 'rack.session',
+                           :path => '/',
+                           :expire_after => 2592000, # In seconds
+                           :secret => 'rupi_super_secret_md5'
 
 # A MySQL connection:
 DataMapper.setup(:default, 'mysql://root:@localhost/RUPI?charset=UTF-8')
@@ -30,22 +35,22 @@ get '/animales?/?' do
 end
 
 get '/tratamientos?/?' do
+	@debug = session.inspect
 	@list = Tratamiento.all
 	tratamiento = @list.first
+	@detalles = DetalleTratamiento.all
 	erb :tratamientos
 end
 delete '/tratamientos/:id?/?' do
 	tratamiento = Tratamiento.get(params[:id])
 
 	begin
-		if tratamiento.destroy
-			flash[:success] = "#{tratamiento.nombre} eliminado correctamente"
-		end
+		flash[:success] = "#{tratamiento.nombre} eliminado correctamente" if tratamiento.destroy
 	rescue Exception => e
 		flash[:danger] = "No se pudo eliminar #{tratamiento.nombre}"
-		flash[:details] = e
+		flash[:details] = e.message
 	end
-		redirect to '/tratamientos/'
+	redirect to '/tratamientos/'
 end
 
 get '/animales/:folio?/?' do

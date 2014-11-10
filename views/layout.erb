@@ -32,9 +32,8 @@
         </ul>
         <form class="navbar-form navbar-right" role="search">
           <div class="form-group">
-            <input class="form-control" placeholder="Buscar"></input>
+            <input class="form-control" placeholder="Buscar" type="search"></input>
           </div>
-          <button class="btn btn-default" type="submit">Buscar</button>
         </form>
       </div>
     </nav>
@@ -42,15 +41,22 @@
       <div class="bg">
         <!-- alerts -->
         <% flash.keys.each do |f| %>
-        <div class="alert alert-<%= f %> alert-dismisssible">
+          <% if f != :details %>
+          <div class="alert alert-<%= f %> alert-dismisssible">
             <button type="button" class="close" data-dismiss="alert">
               <span>&times;</span>
             </button>
             <strong><%= flash[f] %></strong>
-            <% if flash[:details] %>
-              <p><%= flash[:details] %></p>
-            <% end %>
-        </div>
+          </div>
+          <% end %>
+        <% end %>
+        <% if flash[:details] %>
+          <div class="alert alert-warning alert-dismisssible">
+            <button type="button" class="close" data-dismiss="alert">
+              <span>&times;</span>
+            </button>
+            <p><%= flash[:details] %></p>
+          </div>
         <% end %>
 
         <%= yield %>
