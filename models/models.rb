@@ -28,6 +28,11 @@ class	Registro
 	belongs_to :raza, 'Raza', child_key: 'id_raza'
 	belongs_to :especie, 'Especie', child_key: 'id_especie'
 	belongs_to :status, 'Estatus', child_key: 'id_status'
+	# Since the foreign key pointing to Person isn't named 'person_id',
+	# we need to override it by specifying the :child_key option. If the
+	# Person model's key would be something different from 'id', we would
+	# also need to specify the :parent_key option.
+	has n, :tratamientos, 'DetalleTratamiento', child_key: [ :folio ]
 
 	def veterinario
 		Veterinario.get(@veterinario)
@@ -56,6 +61,23 @@ class Tratamiento
    def to_s
    	@nombre
    end
+end
+
+class DetalleTratamiento
+	include DataMapper::Resource
+	# set all String properties to have a default length of 255
+	DataMapper::Property::String.length(255)
+
+	# set the storage name for the :legacy repository
+   storage_names[:default] = "DetalleTratamiento"
+
+   property :fecha_aplicacion,	Date
+   property :id_veterinario,		Integer
+
+   # belongs_to child_key: FK de esta tabla
+   # belongs_to parent_key: PK de la tabla referenciada
+   belongs_to :tratamiento, 'Tratamiento', key: true, child_key: :id_tratamiento
+   belongs_to :registro, 'Registro', key: true, child_key: :folio
 end
 
 class Veterinario
