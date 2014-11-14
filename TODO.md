@@ -2,7 +2,6 @@
 
 - Presentar el desarrollo con todas sus funciones a nivel prototipo, con el visto bueno del cliente (institución).
 - Debe tener integrado los logos de la institución y del sistema. Utilizando la plantilla definida por el grupo.
-- Obligatorio tener mínimo 3 programas con conexión a la Base de Datos . (Consulta, Altas, bajas y cambios)
 
 
 ## Fase 4
