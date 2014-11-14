@@ -12,7 +12,11 @@ nav.navbar input[type="search"] {
 	font-size: 0.9em;
 	line-height: 0.9em;
 }
-
+nav#pager { margin-top: 1.5em; }
+section#debug {
+	margin-top: 2em;
+	padding: 1em;
+}
 .container .bg {
 	background-color: #fff;
 	min-height: 400px;
@@ -66,6 +70,7 @@ table th {
 td.form-actions {
 	text-align: center;
 }
-td.form-actions form {
+td.form-actions form, form.inline {
 	display: inline;
+	text-align: center;
 }

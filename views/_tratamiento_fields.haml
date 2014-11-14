@@ -1,0 +1,10 @@
+.form-group
+	%label.control-label.col-sm-4{for: :tratamiento} Nombre del tratamiento:
+	.col-sm-4
+		%input.form-control{type: :text, id: "tratamiento_nombre", name: "tratamiento[nombre]",
+			placeholder: "Ej. Moquillo", value: tratamiento.nombre}
+.form-group
+	.col-sm-4.col-sm-offset-4
+		%button.btn.btn-success.pull-right{type: :submit}
+			%i.glyphicon.glyphicon-ok
+			Guardar

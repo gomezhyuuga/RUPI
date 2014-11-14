@@ -67,21 +67,24 @@
 				.panel-heading
 					%h3.panel-title
 						Tratamientos
-						%a.btn.btn-success.btn-xs.pull-right(href="tratamiento/")
+						%a.btn.btn-success.btn-xs.pull-right{href: "/animales/tratamientos/new"}
 							%i.glyphicon.glyphicon-plus-sign
 							Nuevo
 				- unless @animal.tratamientos.blank?
-					%table.table.table-striped
+					%table.table.table-striped.table-bordered
 						%thead
 							%th Nombre
 							%th Fecha de aplicación
 							%th Veterinario
+							%th Acciones
 						%tbody
 							- @animal.tratamientos.each do |t|
 								%tr
 									%td= t.tratamiento
-									%td= t.fecha_aplicacion
+									%td= pdate(t.fecha_aplicacion)
 									%td= t.veterinario
+									%td.text-center
+										=action_buttons "", "/animales/tratamientos/#{t.id}"
 				- else
 					.panel-body.text-center
 						%p.lead Sin tratamientos
@@ -107,3 +110,4 @@
 							%td Tobramicina
 							%td 18-10-2014
 							%td Federico Mejía
+= haml :_pager

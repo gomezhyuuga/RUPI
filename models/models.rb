@@ -1,4 +1,4 @@
-# encoding: utf-8
+# encoding: UTF-8
 class	Registro
 	include DataMapper::Resource
 	# set all String properties to have a default length of 255
@@ -14,7 +14,6 @@ class	Registro
 	property :color,			String
 	property :peso,			Float
 	property :nacimiento,	Date, field: "fecha_nacimiento"
-	property :veterinario,	Integer, field: "id_vetRecibe"
 	property :observaciones, Text
 	property :adoptante, 	Integer, field: "id_adoptante"
 	# Custom properties
@@ -25,15 +24,12 @@ class	Registro
 	belongs_to :raza, 'Raza', child_key: 'id_raza'
 	belongs_to :especie, 'Especie', child_key: 'id_especie'
 	belongs_to :status, 'Estatus', child_key: 'id_status'
+	belongs_to :veterinario, 'Veterinario', child_key: 'id_veterinario'
 	# Since the foreign key pointing to Person isn't named 'person_id',
 	# we need to override it by specifying the :child_key option. If the
 	# Person model's key would be something different from 'id', we would
 	# also need to specify the :parent_key option.
 	has n, :tratamientos, 'DetalleTratamiento', child_key: [ :folio ]
-
-	def veterinario
-		Veterinario.get(@veterinario)
-	end
 
 	def to_s
 		@nombre
@@ -57,7 +53,7 @@ class Tratamiento
    storage_names[:default] = "Tratamiento"
 
    property :id,			Serial, field: "id_tratamiento"
-   property :nombre,		String, field: "nombreT"
+   property :nombre,		String, field: "nombreT", required: true
 
    def to_s
    	@nombre
@@ -71,18 +67,15 @@ class DetalleTratamiento
 
 	# set the storage name for the :legacy repository
    storage_names[:default] = "DetalleTratamiento"
-
-   property :fecha_aplicacion,	Date
-   property :veterinario,			Integer, field: "id_veterinario"
+   property :id,						Serial
+   property :fecha_aplicacion,	Date, required: true
+   # property :veterinario,			Integer, field: "id_veterinario", required: true
 
    # belongs_to child_key: FK de esta tabla
    # belongs_to parent_key: PK de la tabla referenciada
-   belongs_to :tratamiento, 'Tratamiento', key: true, child_key: :id_tratamiento
-   belongs_to :registro, 'Registro', key: true, child_key: :folio
-
-   def veterinario
-		Veterinario.get(@veterinario)
-	end
+   belongs_to :tratamiento, 'Tratamiento', child_key: :id_tratamiento
+   belongs_to :registro, 'Registro', child_key: :folio
+   belongs_to :veterinario, 'Veterinario', child_key: :id_veterinario
 end
 
 class Veterinario

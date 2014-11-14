@@ -1,0 +1,43 @@
+.page-header
+	%h1 Tratamientos
+.row
+	.col-md-3
+		%h2
+			Catálogo
+			%a.btn.btn-success.btn-sm.pull-right{href: "/tratamientos/new"}
+				%i.glyphicon.glyphicon-plus-sign
+				Nuevo
+		%table.table.table-condensed.table-bordered
+			%thead
+				%tr
+					%th Nombre
+					%th Acciones
+			%tbody
+				- @list.each do |t|
+					%tr
+						%td= t.nombre
+						%td.form-actions
+							= action_buttons "/tratamientos/#{t.id}/edit", "/tratamientos/#{t.id}"
+	.col-md-9
+		%h2
+			Detalle de tratamientos
+			%a.btn.btn-success.btn-sm.pull-right{href: "/animales/tratamientos/new"}
+				%i.glyphicon.glyphicon-plus-sign
+				Nuevo
+		%table.table.table-striped.table-bordered
+			%thead
+				%th Animal
+				%th Tratamiento
+				%th Fecha de aplicación
+				%th Veterinario
+			%tbody
+				- @detalles.each do |dt|
+					%tr
+						%td
+							%a{href: "/animales/#{dt.registro.id}/"}= dt.registro
+						%td= dt.tratamiento
+						%td= dt.fecha_aplicacion
+						%td= dt.veterinario
+
+= haml :_pager
+%input#navbar_active{type: :hidden, value: :tratamientos}/

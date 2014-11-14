@@ -1,0 +1,8 @@
+.page-header
+	%h1 Nuevo tratamiento
+
+%form.form-horizontal{action: "/tratamientos/#{@t.id}", method: :POST}
+	%input{name: :_method, value: :put, type: :hidden}/
+	= haml :_tratamiento_fields, locals: { tratamiento: @t }
+
+= haml :_pager

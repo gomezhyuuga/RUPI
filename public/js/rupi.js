@@ -8,6 +8,5 @@ $(document).ready(function() {
 
 	// Elemento activo de navbar
 	var liActive = $('input#navbar_active').val();
-	console.log($('ul.nav.navbar-nav li'));
 	$('ul.nav.navbar-nav li.' + liActive).addClass('active');
 });

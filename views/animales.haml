@@ -9,13 +9,18 @@
 					%h3= a.nombre
 					%p.summary
 						%strong Sexo:
-						%span.label.label-default Femenino <br/>
+						%span.label.label-default= a.sexo
+						%br/
 						%strong Raza:
-						%span.label.label-primary Boston terrier <br/>
+						%span.label.label-primary= a.raza
+						%br/
 						%strong Estatus:
-						%span.label.label-success Adoptado <br/>
+						= label_status a.status.id, a.status
+						%br/
 					%p
-						%a.btn.btn-primary.btn-block{ href: "animales/#{a.id}/" }
+						%a.btn.btn-primary.btn-block{ href: "/animales/#{a.id}/" }
 							%i.glyphicon.glyphicon-info-sign
 							Ver detalles
+
+= haml :_pager
 %input#navbar_active{type: :hidden, value: :animales}

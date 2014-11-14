@@ -7,11 +7,12 @@
 		%title Adopciones RUPI
 
 		-# Bootstrap
-		%link{rel: "stylesheet", href: "/vendor/bootstrap/css/bootstrap.min.css"}/
-		%link{rel: "stylesheet", href: "/css/cerulean.css"}/
-
-		-# Application
-		%link{rel: "stylesheet", href: "/css/rupi.css"}/
+		=stylesheet "/vendor/bootstrap/css/bootstrap.min.css"
+		=stylesheet "/css/cerulean.css"
+		=stylesheet "/css/rupi.css"
+		=stylesheet "/vendor/select2/select2.css"
+		=stylesheet "/vendor/select2/select2-bootstrap.css"
+		=stylesheet "/vendor/datepicker/css/datepicker3.css"
 
 		:plain
 			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,19 +26,30 @@
 			.container
 				%a.navbar-brand{ href: "/" } RUPI
 				%ul.nav.navbar-nav
-					%li.animales <a href="/animales">Animales</a>
-					%li.tratamientos <a href="/tratamientos">Tratamientos</a>
-					%li.medicinas <a href="/tratamientos">Medicinas</a>
+					%li.animales <a href="/animales/">Animales</a>
+					%li.tratamientos <a href="/tratamientos/">Tratamientos</a>
+					%li.medicinas <a href="/tratamientos/">Medicinas</a>
 
 				%form.navbar-form.navbar-right{role: "search"}
 					.form-group
 						%input.form-control{placeholder: "Buscar", type: "search"}
 		%section.container
 			.bg
+				- flash.keys.each do |f|
+					- if f != :details
+						.alert.alert-dismisssible{class: "alert-#{f}"}
+							%button.close{"data-dismiss" => "alert", type: :button}
+								%span &times;
+							%strong= flash[f]
+				- if flash[:details]
+					%div.alert.alert-warning
+						%button.close{type: :button, "data-dismiss" => "alert"}
+							%span &times;
+						%p= flash[:details]
 				= yield
 		- if @debug
-			%section.container
-				= @debug
+			%section.container#debug
+				%pre=@debug
 
 		%footer
 			%p Proyecto Base de Datos <a href="#">ITESM CEM</a>

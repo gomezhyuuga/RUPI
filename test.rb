@@ -1,4 +1,6 @@
 # encoding: UTF-8
+require 'sinatra'
+require 'sinatra/contrib'
 require 'data_mapper' # ORM
 require "#{Dir.pwd}/models/models.rb"
 
