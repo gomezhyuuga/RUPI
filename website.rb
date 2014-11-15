@@ -4,7 +4,7 @@ require 'sinatra'
 # Extensions
 require 'sinatra/contrib'
 require 'data_mapper' # ORM
-require 'Haml' # Templates
+require 'haml' # Templates
 require 'awesome_print'
 require 'sinatra/flash'
 require 'sinatra/redirect_with_flash'

@@ -1,6 +1,7 @@
 # rupi.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
 
 addressable -v2.3.6
+awesome_print -v1.2.0
 backports -v3.6.3
 bcrypt -v3.1.9
 bcrypt-ruby -v3.1.5
@@ -30,6 +31,7 @@ hitimes -v1.2.2
 io-console -v0.4.2
 json -v1.8.1
 json_pure -v1.8.1
+kgio -v2.9.2
 listen -v2.7.11
 minitest -v4.7.5
 multi_json -v1.10.1
@@ -37,6 +39,7 @@ psych -v2.0.5
 rack -v1.5.2
 rack-protection -v1.5.3
 rack-test -v0.6.2
+raindrops -v0.13.0
 rake -v10.1.0
 rb-fsevent -v0.9.4
 rb-inotify -v0.9.5
@@ -55,4 +58,5 @@ thin -v1.6.3
 tilt -v1.4.1
 timers -v4.0.1
 tux -v0.3.0
+unicorn -v4.8.3
 uuidtools -v2.1.5
