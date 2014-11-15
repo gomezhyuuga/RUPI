@@ -23,7 +23,7 @@ enable :sessions
 set :session_secret, 'RUPI SECRET'
 
 # A MySQL connection:
-DataMapper.setup(:default, 'mysql://root:@localhost/RUPI?encoding=UTF-8')
+DataMapper.setup(:default, 'mysql://rupiapp:rupi82456@localhost/RUPI?encoding=UTF-8')
 DataMapper.finalize
 
 # READ
