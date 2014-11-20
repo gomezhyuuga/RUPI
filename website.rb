@@ -50,6 +50,11 @@ class RupiApp < Sinatra::Application
 			"Not found"
 		end
 	end
+	get '/animales/tratamientos/:id/edit' do
+		@tratamiento = DetalleTratamiento.get(params[:id])
+		@animal = @tratamiento.registro
+		haml :animales_tratamiento_edit
+	end
 
 	# DELETE
 	delete '/tratamientos/:id?/?' do
@@ -149,6 +154,16 @@ class RupiApp < Sinatra::Application
 			"<span class='label label-#{dirs[status-1]}'>" +
 			content.to_s +
 			"</span>"
+		end
+
+		def option_for(val1, val2, value, description)
+			selected = val1 == val2 ? "selected" : ""
+			"<option value='#{value}' #{selected}>#{description}</option>"
+		end
+
+		def radio_for(name, id, val1, val2, value)
+			checked = val1 == val2 ? "checked" : ""
+			"<input type='radio' name='#{name}' id='#{id}' value='#{value}' #{checked} />"
 		end
 	end
 

@@ -18,6 +18,10 @@ section#debug {
 	padding: 1em;
 }
 .container .bg {
+	background-image: url('../imgs/logotec.jpg');
+	background-repeat: no-repeat;
+	background-position: 97% 10px;
+	background-size: 250px;
 	background-color: #fff;
 	min-height: 400px;
 	padding: 1em 2em;

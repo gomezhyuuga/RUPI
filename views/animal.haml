@@ -84,7 +84,7 @@
 									%td= pdate(t.fecha_aplicacion)
 									%td= t.veterinario
 									%td.text-center
-										=action_buttons "", "/animales/tratamientos/#{t.id}"
+										=action_buttons "/animales/tratamientos/#{t.id}/edit", "/animales/tratamientos/#{t.id}"
 				- else
 					.panel-body.text-center
 						%p.lead Sin tratamientos

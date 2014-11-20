@@ -30,14 +30,17 @@
 				%th Tratamiento
 				%th Fecha de aplicación
 				%th Veterinario
+				%th Acciones
 			%tbody
 				- @detalles.each do |dt|
 					%tr
 						%td
 							%a{href: "/animales/#{dt.registro.id}/"}= dt.registro
 						%td= dt.tratamiento
-						%td= dt.fecha_aplicacion
+						%td= pdate( dt.fecha_aplicacion )
 						%td= dt.veterinario
+						%td.text-center
+							=action_buttons "/animales/tratamientos/#{dt.id}/edit", "/animales/tratamientos/#{dt.id}"
 
 = haml :_pager
 %input#navbar_active{type: :hidden, value: :tratamientos}/

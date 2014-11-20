@@ -1,10 +1,5 @@
-- if @t.errors.count > 0
-	%div.alert.alert-warning
-		- @t.errors.each do |e|
-			%p= e
-
 .page-header
-	%h1 Registrar tratamiento
+	%h1 Editar tratamiento
 
 .row
 	.col-md-5
@@ -14,29 +9,30 @@
 			.form-group
 				%label.control-label.col-sm-2{for: :animal} Animal:
 				.col-sm-10
-					%select.use-select2.col-sm-12.form-control{name: "tratamiento[folio]", id: "tratamiento_folio"}
-						- Registro.all.each do |e|
-							%option{value: e.id}= e.nombre
+					%p.form-control-static= @animal
+					%input{type: :hidden, name: "tratamiento[folio]", id: "tratamiento_folio", value: @animal.id}
 			.form-group
 				%label.control-label.col-sm-2{for: :tratamiento} Tratamiento:
 				.col-sm-10
 					%select.col-sm-12.use-select2.form-control{id: "tratamiento_id_tratamiento", name: "tratamiento[id_tratamiento]"}
 						- Tratamiento.all.each do |t|
-							%option{value: t.id}= t.nombre
+							=option_for(@tratamiento.tratamiento.id, t.id, t.id, t.nombre)
 			.form-group
 				%label.control-label.col-sm-2{for: :tratamiento} Veterinario:
 				.col-sm-10
 					- Veterinario.all.each do |v|
 						.radio
 							%label
-								%input{type: :radio, name: "tratamiento[id_veterinario]", id: "tratamiento_veterinario", value: v.id}= v
+								=radio_for("tratamiento[id_veterinario]", "tratamiento_veterinario", @tratamiento.veterinario.id, v.id, v.id)
+								=v
 			.form-group
 				%label.control-label.col-sm-2{for: :fecha} Fecha de aplicación:
 				.col-sm-5
 					.input-group
 						%span.input-group-addon
 							%i.glyphicon.glyphicon-calendar
-						%input.form-control.datepicker{type: :text, placeholder: :Fecha, name: "tratamiento[fecha_aplicacion]", id: "tratamiento_fecha_aplicacion"}
+						%input.form-control.datepicker{type: :text, placeholder: :Fecha, name: "tratamiento[fecha_aplicacion]", id: "tratamiento_fecha_aplicacion",
+							value: pdate(@tratamiento.fecha_aplicacion) }
 
 			%button.btn.btn-success.btn-lg{type: :submit}
 				%i.glyphicon.glyphicon-ok
