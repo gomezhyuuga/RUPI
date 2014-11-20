@@ -5,12 +5,13 @@
 	.col-md-5
 		%img.center-block{src: "/imgs/clipart01.jpg", height: "300px"}/
 	.col-md-7
-		%form.form-horizontal{action: "/animales/tratamientos/new", method: :POST}
+		%form.form-horizontal{action: "/animales/tratamientos/#{@tratamiento.id}", method: :POST}
+			%input{name: :_method, value: :put, type: :hidden}/
 			.form-group
 				%label.control-label.col-sm-2{for: :animal} Animal:
 				.col-sm-10
-					%p.form-control-static= @animal
-					%input{type: :hidden, name: "tratamiento[folio]", id: "tratamiento_folio", value: @animal.id}
+					%p.form-control-static= @tratamiento.registro
+					%input{type: :hidden, name: "tratamiento[folio]", id: "tratamiento_folio", value: @tratamiento.registro.id}
 			.form-group
 				%label.control-label.col-sm-2{for: :tratamiento} Tratamiento:
 				.col-sm-10

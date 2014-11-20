@@ -37,17 +37,19 @@
 						%input.form-control{placeholder: "Buscar", type: "search"}
 		%section.container
 			.bg
-				- flash.keys.each do |f|
-					- if f != :details
-						.alert.alert-dismisssible{class: "alert-#{f}"}
-							%button.close{"data-dismiss" => "alert", type: :button}
-								%span &times;
-							%strong= flash[f]
-				- if flash[:details]
-					%div.alert.alert-warning
-						%button.close{type: :button, "data-dismiss" => "alert"}
-							%span &times;
-						%p= flash[:details]
+				.row
+					.col-sm-9
+						- flash.keys.each do |f|
+							- if f != :details
+								.alert.alert-dismisssible{class: "alert-#{f}"}
+									%button.close{"data-dismiss" => "alert", type: :button}
+										%span &times;
+									%strong= flash[f]
+						- if flash[:details]
+							%div.alert.alert-warning
+								%button.close{type: :button, "data-dismiss" => "alert"}
+									%span &times;
+								%p= flash[:details]
 				= yield
 		- if @debug
 			%section.container#debug

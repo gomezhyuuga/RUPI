@@ -117,6 +117,17 @@ class RupiApp < Sinatra::Application
 	end
 
 	# UPDATE
+	put '/animales/tratamientos/:id' do
+		@t = DetalleTratamiento.get(params[:id])
+
+		if @t.update( params[:tratamiento] )
+			flash[:success] = "Tratamiento actualizado correctamente"
+			redirect to "/animales/#{@t.registro.id}"
+		else
+			flash.now[:danger] = "Error guardando el tratamiento"
+			haml :animales_tratamiento_edit
+		end
+	end
 	put '/tratamientos/:id' do
 		@t = Tratamiento.get(params[:id])
 		if @t.update( params[:tratamiento] )
